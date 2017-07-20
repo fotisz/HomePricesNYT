@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Home Price Index</title>
+    <link rel="stylesheet" href="./css/base.css">
+  </head>
+	<body>
+  <div class="g-shell">
+    <div class="g-tooltip">
+      <span class="g-playername-tooltip"></span>
+      <span class="g-dltype-tooltip"></span>
+      <span class="g-salary-tooltip"></span>
+    </div>
+
+    <h5 class="g-intro-sentence">
+      If you bought
+      <span class="g-selector" data-key="price"></span>
+      an average home in
+      <span class="g-selector" data-key="city"></span>
+      around
+      <span class="g-selector" data-key="date"></span>
+      it would be worth
+      <span class="g-answer"></span> today.
+    </h5>
+    <div class="g-chart"></div>
+    <div class="g-table-container">
+
+      <div class="g-table-intro">
+        <h4>Behind the data </h4>
+        <p class="g-table-readin">The Standard & Poor’s Case-Shiller Home Price Index for 20 major metropolitan areas is one of the most closely watched gauges of the housing market.</p>
+      </div>
+      <table class="g-table">
+        <tr>
+          <th class="g-proper-city">City</th>
+          <th class="g-yoy-chg" colspan="2">Year-over-year change</th>
+          <th class="g-peak-month-td" colspan="2">Since peak</th>
+          <th class="g-change-since-selected" colspan="2"> <span class="g-date-compare">Since Jan. 2000</span></th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  </body>
+  <script src="./js/lib.js"></script>
+  <script src="./js/main.js"></script>
+</html>
